@@ -1,15 +1,274 @@
+/* 메인 */
+#main{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(251, 251, 251);
+    padding: 30px 0;
+}
+
+
+/* 달력 라이브러리 */
 #calendar{
     width: 800px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.calendar_list{
-    /* display: none; */
-    text-align: center;
-    margin-top: 30px;
+
+
+/* input, select,option, textarea 디자인 */
+.calendar_add_contents input, .calendar_add_contents select, .calendar_add_contents option, .calendar_add_contents textarea{
+    border: 1px solid rgb(104, 208, 204);
+    border-radius: 7px;
+    font-size: 16px;
 }
-.list_th p:first-child{
-    font-size: 30px;
+
+/* input, select,option, textarea :focus 디자인 */
+.calendar_add_contents input:focus, .calendar_add_contents select:focus, .calendar_add_contents option:focus, .calendar_add_contents textarea:focus{
+    outline: none;
+    border: 2px solid rgb(104, 208, 204);
+}
+
+
+/* 날짜별 일정 목록 */
+.calendar_list{
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* border: 2px solid #e5e5e5; */
+}
+/* 일정 목록 날짜 표시 부분(제목) */
+.list_th{
+    font-size: 22px;
     font-weight: bold;
+    background-color: rgb(104, 208, 204);
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* 일정 목록 일정 표시 부분 */
+.list_td{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 18px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    background-color: #fff;
+}
+/* 일정 목록 > 카테고리 이미지 */
+.list_td .td_category{
+    float: left;
+}
+.list_td .td_category img{
+    width: 32px;
+    margin-right: 8px;
+    position: relative;
+    bottom: 5px;
+}
+/* 일정 목록 > 제목 */
+.list_td .td_title{
+    display: inline-block;
+    text-align: left;
+}
+/* 일정 목록 > 참여 그룹원 */
+.list_td .td_groupone{
+    display:inline-block;
+    color: #8f8f8f;
+    margin-left: 10px;
+    clear: both;
+    text-align: right;
+}
+.list_td .td_writer{
+    float: right;
+    /* color: #8f8f8f; */
+}
+/* 일정 목록 > 기간 */
+.list_td .td_date{
+    float: right;
+    margin-right: 15px;
+}
+/* 일정 세부사항(일정 표시 부분 클릭 시 표시) */
+.list_show{
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 18px;
+}
+.list_show div{
+    margin: 0 auto;
+}
+.list_show .td_category{
+    margin-top: 15px;
+}
+.list_show .show_title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.list_show .show_category_name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #8f8f8f;
+}
+.list_show .show_writer{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.list_show .show_date{
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 245px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 600;
+}
+.list_show .contents_title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.list_show .groupone{
+    margin: 0 5px;
+    background-color: rgb(104, 208, 204);
+    color: #fff;
+}
+.list_show .show_group{
+    margin: 30px 0;
+}
+.list_show .show_memo{
+    border-top: 1px solid #e5e5e5;
+    padding: 10px;
+    margin-top: 20px;
+}
+.list_show .show_btn{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.list_show .show_btn button{
+    padding: 7px 20px;
+    margin: 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(104, 208, 204);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 일정 추가 폼, 일정 추가 버튼 틀 */
+.calendar_add_contents, .calendar_add_btn{
+    border: 2px solid rgb(104, 208, 204);
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;  
+}
+/* 일정 추가 폼(+버튼 클릭 시 표시) */
+.calendar_add_contents{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.calendar_add_contents .cancle_btn{
+    float: right;
+    font-size: 50px;
+    line-height: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.calendar_add_contents .contents_title, .calendar_add_contents .p_date{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+}
+.calendar_add_contents input[type="text"]{
+    width: 700px;
+    height: 40px;
+    padding: 0 10px;
+}
+.calendar_add_contents input[type="datetime-local"], .calendar_add_contents select{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.calendar_add_contents select{
+    padding: 5px 10px;
+}
+.calendar_add_contents input[type="datetime-local"]{
+    padding: 10px;
+    width: 230px;
+}
+.calendar_add_contents .p_date{
+    display: inline-block;
+}
+.calendar_add_contents .p_all{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cal_checkbox{
+    width: 20px;
+    height: 20px;
+}
+.groupone{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgb(104, 208, 204);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.groupone p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.groupone .groupones{
+    position: absolute;
+    left: -9999px;
+    text-indent: -9999px;
+}
+.cal_group_div label{
+    cursor: pointer;
+}
+.p_all label{
+    cursor: default;
+}
+.calendar_add_contents textarea{
+    width: 700px;
+    resize: none;
+    padding: 20px;
+}
+/* 일정 추가 폼 > 일정 추가 틀 */
+.calendar_add_contents .calendar_submit{
+    margin-top: 25px;
+}
+/* 일정 추가 폼 > 일정 추가 submit */
+.calendar_add_contents .cal_btn{
+    font-size: 22px;
+    padding: 8px 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(104, 208, 204);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.calendar_add_contents .cal_btn:focus{
+    border: 1px solid rgb(104, 208, 204);
+}
+
+/* 일정 추가 버튼(+) */
+.calendar_add_btn{
+    text-align: center;
+    font-size: 50px;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 8px;
 }
