@@ -1,0 +1,29 @@
+/* color: rgb 104 208 204 */
+/* @font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+@import url(/resources/assets/css/components/nav.css);
+@import url(/resources/assets/css/components/footer.css);
+
+@font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Goyang';
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Goyang';
+    background-color: rgb(255, 255, 255);
+}
+a {text-decoration: none;}
+a:link{color: black;}
+a:visited{color: black;}

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* 저자 : 권혜진 */
+
+.navbar,
+.nav_container {
+  z-index: 10;
+
+  width: 100%;
+  height: 55px;
+  min-width: 600px;
+  top: 0;
+  position: fixed;
+
+  /* border-bottom: 2px solid rgba(104, 208, 204, 0.3); */
+  box-shadow: 0 1px 4px rgb(0 0 0 /30%);
+  background-color: rgb(255, 255, 255);
+}
+.nav_container {
+  /* width: 1200px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_left {
+  float: left;
+}
+/* .nav_menu{
+    margin: 5px 0 0 10px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(/assets/images/list_menu_icon.png) no-repeat left;
+    background-size: cover;
+} */
+
+.nav_logo {
+  /* float: left; */
+  /* margin-left: 400px; */
+  display: block;
+  position: absolute;
+  left: 70px;
+
+  width: 160px;
+  height: 50px;
+  background: url(/resources/assets/images/components/logo.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.navbar li {
+  list-style: none;
+  float: left;
+  height: 55px;
+
+  font-size: 22px;
+
+  top: 0;
+}
+
+.sec2 {
+  margin-right: 50px;
+}
+
+.nav_link {
+  top: 0;
+  display: inline;
+  padding: 10px 10px 17px;
+  color: #696969;
+}
+.nav_link:visited {
+  color: #696969;
+}
+.nav_link:hover {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(104, 208, 204);
+}
+
+/* sidebar */
+#menuicon {
+  display: none;
+}
+#menuicon + label {
+  display: block;
+  margin: 30px;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+#menuicon + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 30px;
+  background: #393939;
+  transition: all 0.35s;
+}
+#menuicon + label span:nth-child(1) {
+  top: 0;
+}
+#menuicon + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  /* style top:calc(50% - 2.5px); 
+	margin-top:-2.5px;*/
+}
+#menuicon + label span:nth-child(3) {
+  bottom: 0;
+}
+#menuicon:checked + label {
+  z-index: 2;
+}
+#menuicon:checked + label span {
+  background: #fff;
+}
+#menuicon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+#menuicon:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+#menuicon:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background: rgba(104, 208, 204, 0.5);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 1;
+  transition: all 0.35s;
+}
+#menuicon:checked + label + div {
+  left: 0;
+}
+
+.nav_sec .sidebar {
+  font-size: 18px;
+}
+.sidebar dt {
+  font-size: 23px;
+}
+.sidebar li {
+  float: none;
+  font-size: 23px;
+}
+.sidebar li,
+.sidebar dt {
+  padding: 0 24px;
+  width: 280px;
+  height: 40px;
+}
+.sidebar dt {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+
+  border-top: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+dd[class="calendar"] {
+  margin-bottom: 20px;
+}
+.sidebar dt::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  margin-right: 24px;
+
+  background: url(/resources/assets/images/screens/user/side_home_icon.png) no-repeat
+    center;
+  background-size: cover;
+}
+.sidebar dt:hover {
+  cursor: default;
+}
+
+.sidebar a::before {
+  content: "";
+
+  width: 35px;
+  height: 35px;
+  margin-right: 24px;
+
+  background: url(/resources/assets/images/screens/user/side_home_icon.png) no-repeat
+    center;
+  background-size: cover;
+}
+
+.sidebar a:link {
+  color: #393939;
+}
+.sidebar a:visited {
+  color: #393939;
+}
+
+.sidebar {
+  padding-top: 100px;
+}

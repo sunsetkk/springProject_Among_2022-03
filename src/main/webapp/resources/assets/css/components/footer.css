@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* 저자 : 권혜진 */
+
+.tail {
+  display: block;
+  color: #222;
+  cursor: auto;
+
+  margin-top: 0;
+  padding-bottom: 18px;
+}
+
+.downloads {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+
+  height: 96px;
+  line-height: 96px;
+
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(20, 193, 199),
+    rgb(52, 214, 206)
+  );
+}
+.footer_downloads {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+}
+.footer_downloads > li {
+  float: left;
+}
+.guide {
+  color: #fff;
+  margin-right: 16px;
+}
+.download_button {
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-top: 25px;
+  background-color: #fff;
+  letter-spacing: -1px;
+  color: #2aa1b0;
+  font-size: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  height: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 8px;
+  padding-right: 12px;
+  position: relative;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+.download_button img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.row::before,
+.row::after {
+  content: " ";
+  display: table;
+}
+
+.tail ul.inline_list {
+  overflow: auto !important;
+  margin: 0;
+}
+.footer_navi {
+  position: relative;
+  z-index: 1;
+}
+.inline_list {
+  display: table;
+}
+.navi br {
+  display: none;
+}
+.navi li {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.inline_list > li {
+  list-style: none;
+  float: left;
+  display: block;
+}
+.privacy_bold {
+  font-weight: 700;
+}
+.footer_navi li a {
+  font-size: 15px;
+  color: #777;
+  text-decoration: none;
+  line-height: inherit;
+}
+.row comment {
+  font-size: 13px;
+  color: #b1b1b1;
+  padding-left: 40px;
+}
