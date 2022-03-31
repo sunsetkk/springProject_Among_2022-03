@@ -22,7 +22,7 @@
                 </label>
                 <div class="sidebar">
                     <li><a href="">홈</a></li>
-                    <li class="my_page"><a href="">마이페이지</a></li>
+                    <li class="my_page"><a href="../user/mypage.jsp">마이페이지</a></li>
                     
                     <dt class="group group_name">그룹1</dt>
                     <dd><a href="">게시글</a></dd>
@@ -41,8 +41,8 @@
             <a class="nav_left nav_logo" href="/"></a>
             <section class="nav_sec sec2">
                 <ul class="navbar_nav">
-                    <li class="nav_item"><a class="nav_link" href="#">Login</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Sign Up</a></li>
+                    <li class="nav_item"><a class="nav_link" href="../user/login.jsp">Login</a></li>
+                    <li class="nav_item"><a class="nav_link" href="../user/join.jsp">Sign Up</a></li>
                 </ul>
             </section>
         </div>

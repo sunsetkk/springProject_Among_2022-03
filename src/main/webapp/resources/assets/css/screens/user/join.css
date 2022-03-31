@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* 저자 : 권혜진 */
+
+.main_container {
+  margin-top: 100px;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  height: 800px;
+
+  margin: 0 auto;
+  /* display: inline-block; */
+  /* background: url(/assets/images/-1.jpg) no-repeat center; */
+  /* background-size: cover; */
+}
+
+.join_bottom {
+  width: 800px;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+
+  /* box-shadow: 1px 1px 20px 20px grey; */
+}
+
+.right {
+  float: right;
+  width: 400px;
+  height: 500px;
+
+  padding-top: 100px;
+  /* padding-right: 150px; */
+}
+.left {
+  float: left;
+  width: 400px;
+  height: 500px;
+
+  padding-top: 50px;
+}
+.under {
+  clear: both;
+  /* width: 1200px; */
+  /* margin-top: 50px; */
+}
+
+.under a:link {
+  color: rgb(104, 208, 204);
+}
+.under a:visited {
+  color: rgb(104, 208, 204);
+}
+
+#join_form input[type=text],
+#join_form input[type=password],
+#join_form input[type=date]
+/* ,#join_form input[type=date]  */ {
+  width: 280px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 10px 0;
+
+  text-align: center;
+  font-size: 18px;
+
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid rgba(105, 105, 105, 0.4);
+  position: relative;
+}
+#join_form input[type="date"]:valid{
+  color: #696969;
+  font-family: "Goyang";
+  margin-top: 0;
+}
+
+#join_form .submit_btn {
+  width: 170px;
+  height: 45px;
+  padding: 5px 0;
+  margin: 15px 100px 20px;
+  outline: 0;
+  border: 0;
+
+  border-radius: 20px;
+  background-color: rgba(104, 208, 204, 0.7);
+  color: white;
+}
+#join_form .submit_btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(104, 208, 204);
+
+  font-weight: bold;
+  color: rgb(104, 208, 204);
+}
+.or,
+.or::before,
+.or::after {
+  content: " ··· ";
+  color: #696969;
+}
+#join_form .bar::after,
+#join_form .bar::before {
+  content: " ― ";
+  color: #696969;
+}
+
+/* .left input{
+    position: relative;
+} */
+.on1 {
+  position: absolute;
+}
+.on2 {
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  bottom: 60px;
+  
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.input_add {
+  width: 280px;
+}
+
+.clear_btn {
+  width: 15px;
+  height: 15px;
+  margin-left: -25px;
+  top: 170px;
+  position: absolute;
+
+  border: 0;
+  outline: 0;
+  background: url(./assets/images/user/x_icon_G.png) no-repeat center;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.left #user_job {
+  position: absolute;
+  bottom: 60px;
+}
+
+.btn1 {
+  top: 230px;
+}
+.btn2 {
+  top: 290px;
+}
+.btn3 {
+  top: 350px;
+}
+.btn4 {
+  top: 410px;
+}
+.btn5 {
+  top: 530px;
+}
